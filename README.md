@@ -1,7 +1,7 @@
 # Stock price streaming project by using Kafka and AWS
 Stock price streaming project using Apache Kafka and AWS
 
-![Apache Kafka](https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_809aa88d3571ee805a47d8fb156ba412/apache-kafka.jpg)
+<img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_809aa88d3571ee805a47d8fb156ba412/apache-kafka.jpg" width="300"/>
 
 ### Background
 1. This data engineering project is aim to make a streaming data pipeline by using Apache kafka and AWS services (S3 and EC2), to stream stock price end-to-end from data source to aws glue.
@@ -60,9 +60,9 @@ bin/kafka-server-start.sh config/server.properties
 
 ### Process after the data is uploaded to s3.
 1. Data in s3 are save in single json file (1 record save as 1 json).
-![s3](https://github.com/taijackt/stock-price-streaming-project/blob/main/screenshots/s3.jpg)
+<img src="https://github.com/taijackt/stock-price-streaming-project/blob/main/screenshots/s3.jpg" width="500"/>
 
-2. Then we use a glue crawler to create a database base on files in bucket.
+3. Then we use a glue crawler to create a database base on files in bucket.
 
-3. Now we can use Athena to query the data
-![athena](https://github.com/taijackt/stock-price-streaming-project/blob/main/screenshots/athena.jpg)
+4. Now we can use Athena to query the data
+<img src="https://github.com/taijackt/stock-price-streaming-project/blob/main/screenshots/athena.jpg" width="500"/>
